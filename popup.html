@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+      .container {
+        padding: 20px;
+        width:300px;
+      }
+      .btn-primary {
+        margin-left: 20px;
+      }
+      body {
+        background-color: #e4e4e4;
+      }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  <div class="container" style="padding:20px" id="form">
+    <form class="form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <button class="btn btn-primary" id="ok">Submit</button>
+    </div>
+    </form>
+      <h3></h3>
+    <button class="btn btn-xs btn-warning" id="clear">Clear data</button>
+    <img id="image-result" hidden>
+  </body>
+</html>
