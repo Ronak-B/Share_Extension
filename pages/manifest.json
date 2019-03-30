@@ -1,0 +1,24 @@
+{
+    "name": "Share",
+    "version": "1.0",
+    "description": "Share the link!",
+    "manifest_version": 2,
+    "author":"Sahil kumar",
+    "icons" : {
+        "128": "share-icon-apple.png"
+      },
+
+    "browser_action": {
+        "default_popup": "popup.html"
+      },
+
+    "background": {
+        "scripts": ["javascript.js"],
+        "persistent": false
+      },
+
+   "permissions": ["storage",
+    "activetab",
+    "tabs",
+    "*://*/"]
+}
