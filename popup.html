@@ -3,6 +3,7 @@
   <head>
     <title>Getting Started Extension's Popup</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
       .container {
         padding: 20px;
@@ -19,21 +20,76 @@
     <script src="popup.js"></script>
   </head>
   <body>
-  <div class="container" style="padding:20px" id="form">
-    <form class="form">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" class="form-control" id="username">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-      </div>
-      <button class="btn btn-primary" id="ok">Submit</button>
+    <div class="container2" id="index">
+      <center><br>
+         <b><a class="example_d" id="gotoLogin">Login</a></b>
+    
+      <br>
+    
+          <b><a class="example_d" id="gotoSignup">Signup</a></b>
+      <br><br>
+    
+      </center>
     </div>
-    </form>
-      <h3></h3>
-    <button class="btn btn-xs btn-warning" id="clear">Clear data</button>
-    <img id="image-result" hidden>
+    <div class="container" id="signup" hidden>
+      <center>
+          <br>
+          <p class="title">REGISTER</p>
+
+          <br>
+
+          <div class="username">
+              <input type="text" placeholder="Username" id="signupusername">
+          </div>
+         
+          <br>
+
+          <div class="email">
+              <input type="text" placeholder="Email" id="signupemail">
+          </div>
+          
+          <br>
+
+          <div class="name">
+              <input type="text" placeholder="Full name" id="signupname">
+          </div>
+
+          <br>
+          <div class="password">
+              <input type="password" placeholder="Password" id="signuppassword">
+          </div>
+          <br>
+
+          <button id="signupbutton">Sign Up</button>
+
+          <br><br>
+      </center>
+    </div>
+    <div class="container2" id="login" hidden>
+      <center>
+          <br>
+          <p class="title">LOGIN</p>
+
+          <br>
+
+          <div class="username">
+              <input type="text" placeholder="Username" id="loginusername">
+          </div>
+         
+          <br>
+
+          <div class="password">
+              <input type="password" placeholder="Password" id="loginpassword">
+          </div>
+          <br>
+          <button id="loginbutton">Login</button>
+
+          <br><br>
+      </center>
+    </div>
+    <div id="home" hidden>
+      <h3> logged in</h3>
+      <button id="logoutbutton">Logout</button>
+    </div>
   </body>
 </html>
