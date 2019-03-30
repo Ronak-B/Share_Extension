@@ -1,24 +1,16 @@
 {
-    "name": "Share",
-    "version": "1.0",
-    "description": "Share the link!",
-    "manifest_version": 2,
-    "author":"Sahil kumar",
-    "icons" : {
-        "128": "share-icon-apple.png"
-      },
+  "manifest_version": 2,
 
-    "browser_action": {
-        "default_popup": "popup.html"
-      },
+  "name": "Python Chrome Plugin",
+  "description": "This extension runs Python code.",
+  "version": "1.0",
 
-    "background": {
-        "scripts": ["javascript.js"],
-        "persistent": false
-      },
-
-   "permissions": ["storage",
-    "activetab",
-    "tabs",
-    "*://*/"]
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "storage"
+  ]
 }
